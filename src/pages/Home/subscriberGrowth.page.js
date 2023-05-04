@@ -50,7 +50,7 @@ const SubscriberGrowthPage = ({navigation}) => {
 
   const changeEnterprise = (value) =>{
     var splitvalue = value.split(' - ');
-    dispatch(getPackageNameList(access_token, splitvalue[0]))
+    // dispatch(getPackageNameList(access_token, splitvalue[0]))
   }
 
   const changeParams = () =>{
@@ -171,12 +171,12 @@ const SubscriberGrowthPage = ({navigation}) => {
                             </Text>
                             <DropDownPicker
                                 open={open}
-                                // value={value}
-                                // items={listItems}
+                                value={value}
+                                items={listItems}
                                 setOpen={setOpen}
-                                // setValue={setValue}
-                                // setItems={setItems}
-                                // onChangeValue={(value) => {changeEnterprise(value)}}
+                                setValue={setValue}
+                                setItems={setItems}
+                                onChangeValue={(value) => {changeEnterprise(value)}}
                                 searchable={true}
                                 containerStyle={{width: '100%'}}
                                 itemStyle={{justifyContent: 'flex-start'}}
@@ -196,11 +196,11 @@ const SubscriberGrowthPage = ({navigation}) => {
                             </Text>
                             <DropDownPicker
                                 open={open2}
-                                // value={value2}
-                                // items={listItems2}
+                                value={value2}
+                                items={listItems2}
                                 setOpen={setOpen2}
-                                // setValue={setValue2}
-                                // setItems={setItems2}
+                                setValue={setValue2}
+                                setItems={setItems2}
                                 searchable={true}
                                 containerStyle={{width: '100%'}}
                                 itemStyle={{justifyContent: 'flex-start'}}
